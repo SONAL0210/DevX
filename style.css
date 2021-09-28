@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     /* color:#edf0f1; */
 }
 
@@ -11,8 +14,8 @@ ul ,  h1  , a {
 }
 
  p, span{
-    color: #24252a;
-    /* color:#edf0f1; */
+    /* color: #24252a; */
+    color:#edf0f1;
     text-decoration: none;
 }
 
@@ -23,8 +26,8 @@ header{
     width: 100%;
    justify-content: space-between;
    align-items: center;
-   background-color: #24252a;
-   /* background-color: #121213; */
+   background-color: #111214;
+   /* background-color: #1b212c; */
 }
 
 .nav_links {
@@ -54,11 +57,11 @@ main{
     display:grid ;
     width: 100%;
     justify-content: space-between;
-    border-style: solid #efefef;
-    box-shadow: #24252a;
-    font-style: oblique;
-    background-color: rgb(170, 170, 170);
-    /* background-color: #121213; */
+    /* border-style: solid #efefef;
+    box-shadow: #24252a; */
+    font-style: bold;
+    background-color: #061535;
+    /* background-color: #3a6892; */
 }
 
 a button{
@@ -90,9 +93,10 @@ a button:active {
 .container {
     width: 100%;
     font-size: 35px;
-    font-style: oblique;
+    font-style:bold;
     font-weight: bold;
     padding: 90px 20px 90px 20px;
+    color: #fff;
     /* margin: 50px 0 50px 0; */
     display:grid;
     align-items: center;
@@ -117,14 +121,14 @@ img{
 
 div span{
     align-items: center;
-    padding: 100px 0px 0px 85px;
+    padding: 100px 0px 0px 65px;
     margin: 165px 20px 0 30px;
 }
 
 #rank {
     align-items: center;
-    padding: 15px 40px 0px 105px ;
-    margin: 0;
+    padding: 0;
+    margin: 3px 40px 0px 98px;
     font-size: 25px;
 }
 
@@ -132,8 +136,8 @@ div span{
     padding: 30px 0 30px 0;
     font-size: 45px;
     text-align: center;
-    color: #24252a;
-    /* color:#edf0f1;   */
+    /* color: #24252a; */
+    color:#edf0f1;  
     /* display: flex; */
     border: 3px;
     box-shadow: #3c3c3d;
@@ -145,13 +149,15 @@ div span{
     padding: 0px 155px 0 155px;
     display: flex;
     flex-wrap: wrap;
+    color: #ffffff;
 }
 
 .list {
     margin: 30px;
     padding: 50px;
+    border-radius: 100px;
     box-shadow: 0 15px 25px rgba(0, 0,0,0.5);
-    background: #373738;
+    background: #080808;
     justify-content: center;
     align-items: center;
     
@@ -179,15 +185,15 @@ div span{
     list-style: none;
     display: table;
     margin: 10px 0 ;
-    padding-left: 34px;
-    padding-right: 5px;
+    padding: 0px 5px 0px 34px;
+    
 
 }
 
 .list ul li::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     width: 34px;
     height: 34px;
@@ -208,7 +214,7 @@ div span{
 .list ul li::after {
     content: '';
     position: absolute;
-    top: 13px;
+    top: 19px;
     left: 11px;
     width: 6px;
     height: 6px;
@@ -239,9 +245,92 @@ div span{
     margin: 50px;
 }
 
+.expertise {
+    margin: 150px 150px 150px 170px;
+    padding: 50px 50px 50px 0px;
+    font-size: 27px;
+    border-radius: 100px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 15px 25px rgba(0, 0,0,0.5);
+    background: #0c0c0e;
+    color: white;
+    height: 460px;
+    width: 460px;
+}
+
+.expertise ul{
+    padding: 20px 30px 30px 0px ;
+    position: relative;
+    
+
+}
+.expertise ul li {
+    position: relative;
+    list-style: none;
+    display: table;
+    margin: 10px 0 ;
+    padding: 0px 5px 0px 34px;
+    
+
+}
+
+.expertise ul li::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border-radius: 34px;
+    transition: background 0.1s, width 0.1s ease-in-out;
+    transition-delay: 0.1s , 0s;
+    border: 2px solid #03a9f4;
+    box-sizing: border-box;
+}
+
+.expertise ul li:hover:before {
+    width: 100%;
+    background: #03a9f4;
+    transition-delay: 0s , 0.1s;
+}
+
+.expertise ul li::after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 11px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: 0.3s;
+    transition-delay: 0s;
+}   
+
+.expertise ul li::after {
+    transform: rotate(45deg) scale(1.5);
+    transition-delay: 0.3s;
+
+
+}
+
+.expertise ul li p{
+    position: relative;
+    z-index: 10;
+    padding: 5px 10px;
+    color: #fff;
+
+}
+
 footer{
     position: relative;
-    background: #373738;
+    background: #080808;
     align-items: center;
     justify-content: center;
     font-size: 35px;
@@ -296,3 +385,14 @@ footer p{
 .footer_links {
     padding-left: 10px;
 }
+
+.update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 39px;
+    height: 500px;
+    animation-direction: reverse;
+
+}
+
